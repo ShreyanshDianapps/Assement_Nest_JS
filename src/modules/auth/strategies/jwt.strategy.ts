@@ -3,8 +3,8 @@ import { ConfigService } from '@nestjs/config';
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy, StrategyOptionsWithRequest } from 'passport-jwt';
 import { Request } from 'express';
-import { UserService } from 'src/users/user.service';
-import { RedisService } from '../../redis/redis.service';
+import { UserService } from 'src/modules/users/user.service';
+import { RedisService } from '../../../redis/redis.service';
 
 export interface JwtPayload {
   sub: string;

@@ -2,12 +2,12 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ScheduleModule } from '@nestjs/schedule';
-import { AuthModule } from './auth/auth.module';
-import { UsersModule } from './users/user.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { UsersModule } from './modules/users/user.module';
 import { RedisModule } from './redis/redis.module';
-import { TasksModule } from './tasks/tasks.module';
-import { CommentsModule } from './comments/comments.module';
-import { AnalyticsModule } from './analytics/analytics.module';
+import { TasksModule } from './modules/tasks/tasks.module';
+import { CommentsModule } from './modules/comments/comments.module';
+import { AnalyticsModule } from './modules/analytics/analytics.module';
 
 @Module({
   imports: [
